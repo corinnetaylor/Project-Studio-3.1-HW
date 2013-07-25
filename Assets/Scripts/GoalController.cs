@@ -57,10 +57,11 @@ public class GoalController : MonoBehaviour {
 	void Update () {
 		
 		if (!introPlayed){
-			IntroText.text = "Welcome to Pose. You control the hand with Q, W, E, R, and Space. Try it now!";
-			IntroText.text += "\n Each color is tied to a certain pose. \nEach pose you can make is pictured on the right in front of its correct color.";
-			IntroText.text += "\n The color of the light in the center tells you which pose to make next.";
-			IntroText.text += "\n See how many correct poses you can make before the time runs out!";
+			IntroText.text = "Welcome to Pose. \nControl the hand with Q, W, E, R, and Space. Try it now!";
+			IntroText.text += "\n Each color is tied to a certain pose.";
+			IntroText.text += "\nOn the right, each pose in front of its correct color.";
+			IntroText.text += "\n The color of the center light shows which pose to make next.";
+			IntroText.text += "\n See how many poses you can make before time runs out!";
 			IntroText.text += "\n Press Enter when you're ready to start.";
 			
 			if (Input.GetKeyDown(KeyCode.Return)){
